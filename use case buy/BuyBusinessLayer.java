@@ -11,7 +11,7 @@ public class BuyBusinessLayer {
      * Processes the payment for the specified amount.
      *
      * @param amount The amount to be paid
-     */
+     */ // add total aomunt 
     public void processPayment(double price , String name) {
       
 

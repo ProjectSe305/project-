@@ -31,10 +31,7 @@ public class Book {
             new Book("Romance", 10.99)
         };
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the name of the book: ");
-        String inputBookName = scanner.nextLine();
-
+        
         Book book = getBookByName(books, inputBookName);
         if (book != null) {
             System.out.println("The price for the book '" + inputBookName + "' is: $" + book.getPrice());

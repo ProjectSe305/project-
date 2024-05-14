@@ -13,8 +13,12 @@ public class BuyBusinessLayer {
      * @param amount The amount to be paid
      */ // add total aomunt 
     public void processPayment(double price , String name) {
+        int total =0;
       
-
-        dataLayer.processPayment(price);
+for(int i =0 ; i<  dataLayer.processPayment(catagory); i++){
+total = total +   dataLayer.processPayment(price) ;
+    
+}
+        system.out.println("the total price is :"+total);
     }
 }

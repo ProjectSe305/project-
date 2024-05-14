@@ -24,7 +24,7 @@ public class BuyPresentationLayer {
         String inputBookName = scanner.nextLine();
 
         // Call the business layer to process the payment
-        businessLayer.processPayment(amount);
+        businessLayer.processPayment(price);
 
         scanner.close();
     }

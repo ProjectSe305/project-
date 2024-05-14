@@ -12,10 +12,10 @@ public class BuyBusinessLayer {
      *
      * @param amount The amount to be paid
      */
-    public void processPayment(double amount) {
+    public void processPayment(double price) {
         // Perform additional business logic here if needed
 
         // Call the data layer to process the payment
-        dataLayer.processPayment(amount);
+        dataLayer.processPayment(price);
     }
 }

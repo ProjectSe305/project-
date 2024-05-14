@@ -1,3 +1,4 @@
+package Test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,6 +9,9 @@ import java.io.InputStream;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import BuyBusinessLayer;
+import BuyPresentationLayer;
 
 public class BuyPresentationLayerTest {
     private BuyBusinessLayer mockBusinessLayer;

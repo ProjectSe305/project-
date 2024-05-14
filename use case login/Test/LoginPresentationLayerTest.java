@@ -1,3 +1,4 @@
+package Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -7,6 +8,9 @@ import java.io.InputStream;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import LoginBusinessLayer;
+import LoginPresentationLayer;
 
 public class LoginPresentationLayerTest {
     private LoginBusinessLayer mockBusinessLayer;

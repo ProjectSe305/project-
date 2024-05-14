@@ -12,7 +12,7 @@ public class BuyBusinessLayer {
      *
      * @param amount The amount to be paid
      */
-    public void processPayment(double price) {
+    public void processPayment(double price , String name) {
        Book book = getBookByName(books, inputBookName);
         if (book != null) {
             System.out.println("The price for the book '" + inputBookName + "' is: $" + book.getPrice());

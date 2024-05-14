@@ -15,7 +15,6 @@ public class BuyBusinessLayer {
     public void processPayment(double price , String name) {
       
 
-        // Call the data layer to process the payment
         dataLayer.processPayment(price);
     }
 }

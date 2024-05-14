@@ -15,7 +15,7 @@ public class BuyBusinessLayer {
     public void processPayment(double price , String name , double total) {
         int total =0;
       
-for(int i =0 ; i<  dataLayer.processPayment(catagory); i++){
+for(int i =0 ; i<  count(dataLayer.processPayment(catagory)); i++){
 total = total +   dataLayer.processPayment(price) ;
     
 }

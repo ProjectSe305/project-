@@ -30,7 +30,12 @@ public class Book {
             new Book("Thriller", 14.25),
             new Book("Romance", 10.99)
         };
-
+ Book book = getBookByName(books, inputBookName);
+        if (book != null) {
+            System.out.println("The price for the book '" + inputBookName + "' is: $" + book.getPrice());
+        } else {
+            System.out.println("Book not found.");
+        }
         
        
     }

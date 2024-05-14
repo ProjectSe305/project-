@@ -13,7 +13,12 @@ public class BuyBusinessLayer {
      * @param amount The amount to be paid
      */
     public void processPayment(double price) {
-        // Perform additional business logic here if needed
+       Book book = getBookByName(books, inputBookName);
+        if (book != null) {
+            System.out.println("The price for the book '" + inputBookName + "' is: $" + book.getPrice());
+        } else {
+            System.out.println("Book not found.");
+        }
 
         // Call the data layer to process the payment
         dataLayer.processPayment(price);

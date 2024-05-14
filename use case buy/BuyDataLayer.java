@@ -32,12 +32,7 @@ public class Book {
         };
 
         
-        Book book = getBookByName(books, inputBookName);
-        if (book != null) {
-            System.out.println("The price for the book '" + inputBookName + "' is: $" + book.getPrice());
-        } else {
-            System.out.println("Book not found.");
-        }
+       
     }
 
     public static Book getBookByName(Book[] books, String bookName) {

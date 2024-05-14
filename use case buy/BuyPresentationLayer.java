@@ -19,8 +19,9 @@ public class BuyPresentationLayer {
         System.out.println("Buy Page");
         System.out.println("--------");
 
-        System.out.print("Enter the amount to be paid: $");
-        double amount = scanner.nextDouble();
+       Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the name of the book: ");
+        String inputBookName = scanner.nextLine();
 
         // Call the business layer to process the payment
         businessLayer.processPayment(amount);

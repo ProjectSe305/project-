@@ -11,7 +11,8 @@ public class BuyPresentationLayer {
 
     /**
      * Starts the buy process.
-     */
+     */ 
+    //add am more clear payment method like let customer mention the name on the catagory of the book and then you show the amount 
     public void startBuy() {
         Scanner scanner = new Scanner(System.in);
 

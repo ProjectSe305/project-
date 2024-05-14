@@ -8,7 +8,7 @@ public class LoginPresentationLayer {
     public LoginPresentationLayer() {
         this.businessLayer = new LoginBusinessLayer();
     }
-
+// add an if statment that show were is the invalid case eathir in username or in password
     public void startLogin() {
         Scanner scanner = new Scanner(System.in);
 

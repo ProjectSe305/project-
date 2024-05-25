@@ -11,18 +11,20 @@ public class BuyPresentationLayer {
 
     /**
      * Starts the buy process.
-     */
+     */ 
+    //add am more clear payment method like let customer mention the name on the catagory of the book and then you show the amount 
     public void startBuy() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Buy Page");
         System.out.println("--------");
 
-        System.out.print("Enter the amount to be paid: $");
-        double amount = scanner.nextDouble();
+       Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the name of the book: ");
+        String inputBookName = scanner.nextLine();
 
         // Call the business layer to process the payment
-        businessLayer.processPayment(amount);
+        businessLayer.processPayment(price , name , total);
 
         scanner.close();
     }

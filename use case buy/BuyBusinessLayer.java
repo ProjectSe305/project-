@@ -11,11 +11,15 @@ public class BuyBusinessLayer {
      * Processes the payment for the specified amount.
      *
      * @param amount The amount to be paid
-     */
-    public void processPayment(double amount) {
-        // Perform additional business logic here if needed
-
-        // Call the data layer to process the payment
-        dataLayer.processPayment(amount);
+     */ // add total aomunt 
+    public void processPayment(double price , String name , double total) {
+        int total =0;
+      
+for(int i =0 ; i<  count(dataLayer.processPayment(catagory)); i++){
+total = total +   dataLayer.processPayment(price) ;
+    
+}
+        dataLayer.processPayment(catagory)
+        system.out.println("the total price is :"+total);
     }
 }

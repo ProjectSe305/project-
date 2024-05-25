@@ -8,7 +8,7 @@ public class LoginPresentationLayer {
     public LoginPresentationLayer() {
         this.businessLayer = new LoginBusinessLayer();
     }
-
+// add an if statment that show were is the invalid case eathir in username or in password
     public void startLogin() {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,12 +21,16 @@ public class LoginPresentationLayer {
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
-        boolean loggedIn = businessLayer.login(username, password);
+        int loginStatus loggedIn = businessLayer.login(username, password);
 
-        if (loggedIn) {
+        if (loginStatus==1) {
             System.out.println("Login successful!");
-        } else {
-            System.out.println("Invalid username or password.");
+        } else  if (loginStatus==-1){
+            System.out.println("Invalid username.");
+        }  if (loginStatus==2){
+         System.out.println("Invalid pasword.");
+        } else{
+           System.out.println("Unknowen erorr.");
         }
 
         scanner.close();
